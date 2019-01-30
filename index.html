@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="UTF-16"><!-- Cambiamos el charset a utf-16 porque vamos a usar tildes y ñ, por defecto es utf-8 -->
+    <title>Mundial de Rusia 2018</title>
+    <!-- IMPORTAMOS UN NUEVO PESO DE NUESTRA FUENTE (LEER CSS LINEA 176) -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"><!-- Recuerda la fuente va antes de mis estilos, recuerda que puedes usar un pipe si quieres colocar otra fuente para ahorrarte una llamada al servidor-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/fifa-world-cup-russia-2018.ico">
+  </head>
+  <body>
+    <header><!-- header -->
+      <a href="index.html"><!-- Metemos el logo dentro de un ancla para que cuando demos click en la imagen nos vaya al home -->
+        <img src="images/logo_rusia_2018_texto.png" width="170px"/><!-- TRUCO: Si queremos alguna imagen de una pagina podemos ir al inspector darle a inspeccionar a esa imagen y copiar su ruta y ponerla en nuestro proyecto, por ejemplo para este desafio queriamos el logo de platzi -->
+      </a>
+      <div class="header-right">
+        <nav><!-- Menu -->
+          <ul>
+            <li><a href="index.html">Partidos</a></li><!-- Con CTRL + Shift + D, duplicamos los elementos -->
+            <li><a href="index.html">Jugadores</a></li>
+            <li><a href="#noticias" class="is-active">Noticias</a></li>
+            <li><a href="index.html">FAQ</a></li>
+          </ul>
+        </nav>
+        <a href="index.html" class="button red">Iniciar sesión</a>
+        <!-- <a href="#" class="button green">Inicia sesión</a> -->
+      </div>
+    </header>
+    <!--  El header tiene todo el tamaño pero el contenido esta como centrado, es decir esta dentro de un contenedor con un ancho de unos 1000-1200px -->
+    <section class="background">
+      <!-- EL item principal y los demas, aunque reproduzcan la misma informacion tienen un diseño diferente -->
+      <div class="container">
+        <form class="formulario">
+          <input type="search" placeholder="Buscar ...">
+          <button type="submit" class="lupa"></button>
+        </form>
+        <article class="portada"><!-- item prinicipal o portada -->
+          <img src="images/foto-de-griezman-con-francia.jpg" alt="foto de Griezman con Francia">
+          <div class="description description-portada">
+            <h2>Griezmann, el Bleu más celeste</h2>
+            <div class="autor">
+              <p>
+                <img src="images/jguerralla.jpg" alt="Jose Guerra WEB"><span>Jose Guerra WEB</span>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="container">
+      <section class="blog-items" id="noticias">
+        <article class="item-blog"><!-- items -->
+          <img src="images/foto-kane-celebrando-un-gol.jpg" alt="Kane Celebrando un gol" width="300">
+          <div class="description">
+            <h3>Kane, Mina y Granqvist, en el podio</h3>
+            <div class="autor">
+              <p>
+                <img src="images/jguerralla.jpg" alt="Jose Guerra WEB" width="35" height="35"><span>Jose Guerra WEB</span>
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="item-blog"><!-- items -->
+          <img src="images/foto-de-gimenez-con-uruguay.jpg" alt="" width="300">
+          <div class="description">
+            <h3>Previa de la 5ª ronda: Fichajes, capitanes y refuerzos</h3>
+            <div class="autor">
+              <p>
+                <img src="images/jguerralla.jpg" alt="Jose Guerra WEB" width="35" height="35"><span>Jose Guerra WEB</span>
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="item-blog"><!-- items -->
+          <img src="images/foto-de-willian-contra-mexico.jpg" alt="Foto de Willian contra Mexico" width="300">
+          <div class="description">
+            <h3>Willian despega en la ciudad de los cohetes</h3>
+            <div class="autor">
+              <p>
+                <img src="images/jguerralla.jpg" alt="Jose Guerra WEB" width="35" height="35"><span>Jose Guerra WEB</span>
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="item-blog"><!-- items -->
+          <img src="images/cavani-celebrando-un-gol.jpg" alt="Cavani celebrando un gol" width="300">
+          <div class="description">
+            <h3>Mbappé, Cavani y Schmeichel, fichajes rentables</h3>
+            <div class="autor">
+              <p>
+                <img src="images/jguerralla.jpg" alt="Jose Guerra WEB" width="35" height="35"><span>Jose Guerra WEB</span>
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="item-blog"><!-- items -->
+          <img src="images/foto-de-iniesta-triste.jpg" alt="Foto de Iniesta triste" width="300">
+          <div class="description">
+            <h3>España y la maldición del anfitrión</h3>
+            <div class="autor">
+              <p>
+                <img src="images/jguerralla.jpg" alt="Jose Guerra WEB" width="35" height="35"><span>Jose Guerra WEB</span>
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="item-blog"><!-- items -->
+          <img src="images/fifa-fans-fest.jpg" alt="Fifa Fans Fest" width="300">
+          <div class="description">
+            <h3>Regalo de entradas en la FIFA Fan Fest™</h3>
+            <div class="autor">
+              <p>
+                <img src="images/jguerralla.jpg" alt="Jose Guerra WEB" width="35" height="35"><span>Jose Guerra WEB</span>
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </section>
+      <!--  Vamos a tener una seccion dentro de una seccion donde van a estar nuestros items, el que esta en el div es el item destacado -->
+    <section class="paginador">
+      <span>Página 1 de 25</span>
+      <ul>
+        <li class="selected"><a href="#">1</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">Siguiente</a></li>
+        <li><a href="#">Última Página</a></li>
+      </ul>
+    </section>
+    <script src="http://localhost:35729/livereload.js"></script>
+  </body>
+</html>
