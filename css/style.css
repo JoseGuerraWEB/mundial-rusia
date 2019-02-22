@@ -90,6 +90,7 @@ nav a.is-active {
 }
 
 h2 {
+  text-align: center;
   margin: 0;
   font-weight: 600;
   margin-bottom: 15px;
